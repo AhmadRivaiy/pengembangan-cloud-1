@@ -13,6 +13,21 @@ const routes = [
             return 'Homepage';
         },
     },
+    {
+        method: 'GET',
+        path: '/home',
+        handler: (request, h) => {
+            return {
+                message: 'Homepage',
+                data: {
+                    name: 'Ahmad Rivaiy',
+                    location: 'Cimahi',
+                    nrp: '3120510901',
+                    description: 'Mahasiswa Informatika'
+                }
+            };
+        }
+    }
 ];
 
 module.exports = routes;
