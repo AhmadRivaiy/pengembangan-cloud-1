@@ -23,7 +23,7 @@ const routes = [
                     name: 'Ahmad Rivaiy',
                     location: 'Cimahi',
                     nrp: '3120510901',
-                    description: 'Mahasiswa Informatika'
+                    description: request.query.message ?? 'Mahasiswa Informatika',
                 }
             };
         }
